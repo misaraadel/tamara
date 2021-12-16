@@ -1893,5 +1893,10 @@ header .image-content img {
     min-width: 190px !important;
     text-align: center;
   }
+  .copyrights .social-media, .copyrights .image-content {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
