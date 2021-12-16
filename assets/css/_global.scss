@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal/Tajawal-Medium.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal/Tajawal-Regular.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Tajawal";
+    src: url(../fonts/Tajawal/Tajawal-Bold.ttf);
+    font-weight: 900;
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Tajawal" , sans-serif ;
+    scroll-behavior: smooth;
+
+    &::selection{
+        background-color: #368B85;
+        color: #fff; 
+    }
+    
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #ccc;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #368B85; 
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #FFD371; 
+    }
+}
+
+.overflowNone{
+    overflow: hidden;
+}
+
+.btn:focus,
+button:focus,
+input:focus,
+.form-control:focus {
+    outline-width: 0px !important;
+    outline-color: transparent !important;
+    box-shadow: 0 0 0 0 rgba($color: #000000, $alpha: 0);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 20px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #FFD371;
+    opacity: .5;
+    transition: all .5s linear;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    opacity: 1;
+}
+
+.overflowNone{
+    overflow: hidden;
+}
+
+.button-contain{
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    .custom-btn{
+        min-width: 170px;
+        padding: 0px 18px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        z-index: 9;
+
+        &.secondary{
+            background-color: var(--secondary);
+        }
+
+        &.primary{
+            background-color: var(--primary);
+        }
+
+        img{
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+
+            &.icon{
+                margin-left: 10px;
+                transition: all .1s linear;
+            }
+
+            &.top-icon{
+                position: absolute;
+                left: calc(50% - 12px);
+                top: -100%;
+                transition: all .4s linear;
+            }
+        }
+        
+        span{
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            transition: all .1s linear;
+        }
+
+        &:hover{    
+            .icon , span{
+                opacity: 0;
+            }
+
+            .top-icon{
+                top: calc(50% - 12px);
+            }
+        }
+    }
+}
+
+.heading{
+    width: 100%;
+    margin-bottom: 32px;
+
+    h4{
+        width: fit-content;
+        position: relative;
+        padding: 20px 0px;
+        font-size: 32px;
+        font-weight: 900;
+        color: var(--primary);
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 100%;
+            background: var(--secondary);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: 0;
+            height: 4px;
+            width: 4px;
+            background: var(--white);
+            animation-duration: 2s;
+            animation-timing-function: linear;;
+            animation-iteration-count: infinite;
+            animation-name: move;
+            z-index: 99;
+        }
+    }
+}
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 6</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Page-#1" transform="translate(-1183.000000, -3325.000000)">
+            <g id="Group-4-Copy-8" transform="translate(0.000000, 2819.000000)">
+                <g id="Group-2-Copy-6" transform="translate(798.000000, 506.000000)">
+                    <g id="Group-6" transform="translate(385.000000, 0.000000)">
+                        <circle id="Oval" stroke-opacity="0.25" stroke="#000000" fill="#40626B" cx="30" cy="30" r="29.5"></circle>
+                        <g filter="url(#filter-1)" id="vuesax/broken/courthouse">
+                            <g transform="translate(13.000000, 11.000000)" id="courthouse">
+                                <line x1="2.83333333" y1="31.1666667" x2="31.1666667" y2="31.1666667" id="Vector" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0"></line>
+                                <path d="M24.0833333,2.83333333 L24.0833333,7.08333333 C21.8166666,7.98999998 19.2666667,7.98999998 17,7.08333333 L17,2.83333333 C19.2666667,3.73999998 21.8166666,3.73999998 24.0833333,2.83333333 Z" id="Vector" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0" fill-rule="nonzero"></path>
+                                <line x1="17" y1="7.08333333" x2="17" y2="11.3333333" id="Vector" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0"></line>
+                                <path d="M5.66666667,22.5391286 L5.66666667,31.1666667 L28.3333333,31.1666667 L28.3333333,15.5833333 C28.3333333,12.75 26.9166667,11.3333333 24.0833333,11.3333333 L9.91666667,11.3333333 C7.08333333,11.3333333 5.66666667,12.75 5.66666667,15.5833333 L5.66666667,17" id="Vector" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0" fill-rule="nonzero"></path>
+                                <line x1="5.66666667" y1="17" x2="27.5116668" y2="17" id="Vector" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0,0"></line>
+                                <line x1="11.3194987" y1="17" x2="11.3194987" y2="31.1666667" id="Vector" stroke="#292D32" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="0,0"></line>
+                                <line x1="16.9861654" y1="17" x2="16.9861654" y2="31.1666667" id="Vector" stroke="#292D32" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="0,0"></line>
+                                <line x1="22.652832" y1="17" x2="22.652832" y2="31.1666667" id="Vector" stroke="#292D32" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="0,0"></line>
+                                <path d="M34,0 L34,34 L0,34 L0,0 L34,0 Z" id="Vector" opacity="0"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
