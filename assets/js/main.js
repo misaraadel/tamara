@@ -1,3 +1,37 @@
+var pass = false;
+function passFun(){
+    if(pass){
+        document.getElementById("PassId").setAttribute("type" , "password");
+        pass = false;
+    }else{
+        document.getElementById("PassId").setAttribute("type" , "text");
+        pass = true;
+    }
+}
+
+var Newpass = false;
+function NewpassFun(){
+    if(Newpass){
+        document.getElementById("NewPassId").setAttribute("type" , "password");
+        Newpass = false;
+    }else{
+        document.getElementById("NewPassId").setAttribute("type" , "text");
+        Newpass = true;
+    }
+}
+
+var NewpassAgain = false;
+function NewpassAgainFun(){
+    if(NewpassAgain){
+        document.getElementById("NewpassAgainId").setAttribute("type" , "password");
+        NewpassAgain = false;
+    }else{
+        document.getElementById("NewpassAgainId").setAttribute("type" , "text");
+        NewpassAgain = true;
+    }
+}
+
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
@@ -12,7 +46,8 @@ $(document).ready(function () {
             scrollTop: 0
         }, 100);
     });
-    //sta
+    
+    
 
     $(function () {
         $(document).scroll(function () {

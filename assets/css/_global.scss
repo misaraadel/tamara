@@ -103,6 +103,8 @@ ul{
         overflow: hidden;
         border-radius: 10px;
         z-index: 9;
+        border: none;
+        outline: none;
 
         &.secondary{
             background-color: var(--secondary);
@@ -127,6 +129,10 @@ ul{
                 left: calc(50% - 12px);
                 top: -100%;
                 transition: all .4s linear;
+            }
+
+            &.white-icon{
+                filter: invert(90%) sepia(73%) saturate(25%) hue-rotate(2deg) brightness(108%) contrast(110%);
             }
         }
         

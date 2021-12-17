@@ -7,13 +7,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
     transition: all .4s linear;
     background-color: var(--white);
 
     &.scrolled{
         padding: 5px 0px;
-        box-shadow: 0px 0px 10px rgba($color: #f59f2a , $alpha: .4);
+        box-shadow: 0px 0px 10px rgba($color: #40626b , $alpha: .1);
         transition: all .4s linear;
 
         .brand-name{
@@ -120,12 +120,347 @@
                 }
             }
         }
+
+        .dropdown {
+            .dropdown-toggle{
+                &::after{
+                    display: none;
+                }
+            }
+
+            .dropdown-item{
+                display: flex;
+                align-items: center;
+                align-content: center;
+                margin-bottom: 20px;
+
+                &:last-child{
+                    margin-bottom: 0px !important;
+                }
+
+                img{
+                    width: 24px;
+                    height: 24px;
+                    object-fit: contain;
+                    filter: invert(34%) sepia(5%) saturate(2591%) hue-rotate(146deg) brightness(100%) contrast(89%);
+                    margin-left: 16px;
+                }
+                span{
+                    color: var(--primary);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 1.5rem;
+                }
+
+                &:active{
+                    background-color: var(--secondary);
+
+                    img{
+                        filter: invert(96%) sepia(0%) saturate(16%) hue-rotate(325deg) brightness(104%) contrast(104%);
+                    }
+
+                    span{
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal {
+    .modal-content{
+        border-radius: 20px !important;
+        overflow: hidden;
+        
+        .modal-header{
+            background-color: var(--primary);
+
+            .close{
+                opacity: 1 !important;
+                span{
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    background-color: var(--white);
+                    font-size: 15px;
+                    color: var(--primary);
+                    border-radius: 50%;
+                }
+            }
+
+            .modal-title{
+                color: var(--white);
+                font-size: 17px;
+                font-weight: 800;
+            }
+        }
+
+        .modal-body{
+            .data-contain{
+                color: var(--primary);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.5rem;
+                margin-bottom: 20px;
+            }
+
+            .image-content{
+                width: 118px;
+                height: 118px;
+                margin: 0px auto 20px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            h4{
+                color: #008881;
+                font-size: 24px;
+                font-weight: 900;
+                text-align: center;
+            }
+
+            p{
+                color: var(--primary);
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+                margin: 20px 0px 0px 0px !important;
+            }
+        }
+
+        .modal-footer{
+            justify-content: space-between;
+
+            button{
+                width: 46% !important;
+                border-radius: 4px !important;
+
+                &.done{
+                    width: 100% !important;
+                }
+
+                &.close-btn{
+                    border: 1px solid #fc4b40 !important;
+                    background-color: transparent;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    color: #fc4b40;
+                    font-size: 15px;
+                    font-weight: 800;
+                    border: none;
+                    outline: none;
+
+                    &:hover{
+                        background-color: #fc4b40;
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form-content{
+    width: 100%;
+
+    .form-group{
+        margin-bottom: 20px;
+        position: relative;
+
+        &.form-check{
+            margin-bottom: 0px !important;
+            cursor: pointer;
+
+            .label-content{
+                margin: 0px !important;
+            }
+        }
+
+        .label-content{
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: block;
+
+            .bold{
+                font-weight: 900;
+                color: #616161;
+            }
+        }
+
+        .password{
+            position: absolute;
+            top: 72%;
+            left: 10px;
+            transform: translateY(-50%);
+            
+            i{
+                color: rgba($color:  #40626b, $alpha: .5);
+            }
+
+            &:hover{
+                i{
+                    color: var(--secondary);
+                }
+            }
+        }
+
+        .form-control{
+            width: 100%;
+            height: 45px;
+            border: 1px solid rgba($color: #40626b , $alpha: .04);
+            background-color: rgba($color: #40626b , $alpha: .04);
+            border-radius: 4px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+
+            &::placeholder{
+                font-size: 14px;
+                font-weight: 500;
+                color: #40626b;
+            }
+
+            &:focus , &:hover{
+                border-color: var(--secondary);
+                background-color: var(--white);
+
+                &::placeholder{
+                    color: var(--secondary);
+                }
+            }
+        }
+
+        .select-data{
+            width: 100%;
+            height: 45px;
+            z-index: 99;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: url('../images/select_arrow.svg');
+                background-size: contain;
+                background-position: center;
+                left: 10px;
+                top: calc(50% - 10px);
+                z-index: 2;
+            }
+
+            select , option {
+                font-size: 14px;
+                font-weight: 500;
+                color: #40626b;
+            }
+        }
+    }
+
+    input[type="file"]{
+        display: none;
+    }
+    .form-label-shape{
+        width: 100%;
+        height: 45px;
+        border: 1px solid rgba($color: #40626b , $alpha: .04);
+        background-color: rgba($color: #40626b , $alpha: .04);
+        padding: 0px 12px;
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        color: #40626b;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background: url('../images/attach.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: calc(50% - 12px);
+            left: 12px;
+        }
+
+        &:hover{
+            border-color: var(--secondary);
+            background-color: var(--white);
+        }
+    }
+
+    .flex-content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+        .link{
+            margin-bottom: 0px !important;
+        }
+    }
+
+    .file__value{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+    .file__value--text{
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--primary);
+    }
+    .file__value--remove{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        &::after{
+            content: '\f00d';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--secondary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border-radius: 50%;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: var(--white);
+            font-size: 15px;
+        }
     }
 }
 
 header{
     width: 100%;
-    padding: 100px 0px 20px;
+    padding: 100px 0px 0px;
     position: relative;
     z-index: 99;
 
@@ -523,7 +858,7 @@ header{
 
 .conditions{
     width: 100%;
-    padding: 0px 0px 30px 0px;
+    padding: 0px 0px 40px 0px;
     background-color: var(--white);
     position: relative;
     z-index: 99;
@@ -585,7 +920,7 @@ header{
 
     .accordion{
         .card , .card-header , .card-body{
-            background-color: rgba($color: var(--white) , $alpha: 1);
+            background-color: var(--white);
             border-radius: 10px;
             border: none !important;
             width: 100%;
@@ -659,7 +994,7 @@ header{
 
 .partner{
     width: 100%;
-    padding: 40px 0px;
+    padding: 0px 0px 0px 0px;
     position: relative;
     z-index: 9;
     background-color: var(--white);
@@ -784,7 +1119,7 @@ header{
     bottom: 10px;
     left: 10px;
     border-radius: 10px;
-    z-index: 999;
+    z-index: 998;
     background-color: var(--primary);
     box-shadow: 0px 0px 10px rgba(33, 40, 50, .1);
     opacity: 0;
