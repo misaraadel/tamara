@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="description" content="....">
+
+        <meta name="author" content="misara adel">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>
+            جائزة تمرا
+        </title>
+
+        <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon"/>
+
+        <link rel="stylesheet" href="assets/css/lib/all.min.css">
+
+        <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+        <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css">
+
+        <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+
+        <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <style>
+            :root{
+                --primary: #40626b;
+                --secondary: #f59f2a;
+                --white: #fff;
+            }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="120">
+        <nav class="navbar">
+            <div class="container">
+                <div class="content">
+                    <div class="hamburger">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+
+                    <a href="#intro" class="brand-name">
+                        <img
+                            src="assets/images/logo.png"
+                            alt="" />
+                    </a>
+
+                    <div class="nav-content">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#intro" class="nav-link active">
+                                    الرئيسية
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">
+                                    عن البرنامج 
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="#objectives" class="nav-link">
+                                    الاهداف
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="#loginCondition" class="nav-link">
+                                    التسجيل
+                                </a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a href="#conditions" class="nav-link">
+                                    الشروط والأحكام
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <div class="button-contain">
+                            <a href="#" class="custom-btn secondary mr-2">
+                                <img
+                                    src="assets/images/download.svg"
+                                    class="icon"
+                                    alt="" />
+    
+                                <span>  
+                                    تحميل ملف الجائزة
+                                </span>
+    
+                                <img
+                                    src="assets/images/download.svg"
+                                    class="top-icon"
+                                    alt="" />
+                            </a>
+                            
+                            <div class="dropdown">
+                                <a href="#" class="user-data dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img
+                                        src="assets/images/user.jpg"
+                                        class="user"
+                                        alt="" />
+        
+                                    <span>  
+                                        تسجيل دخول
+                                    </span>
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/order.svg" alt="" />
+
+                                        <span>
+                                            طلباتي
+                                        </span>
+                                    </a>
+
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/edit.svg" alt="" />
+
+                                        <span>
+                                            تعديل حسابي
+                                        </span>
+                                    </a>
+
+                                    <a class="dropdown-item" href="#"  data-toggle="modal" data-target="#PasswordModal">
+                                        <img src="assets/images/password.svg" alt="" />
+
+                                        <span>
+                                            تغيير كلمة المرور
+                                        </span>
+                                    </a>
+
+                                    <div class="dropdown-divider"></div>
+
+                                    <a class="dropdown-item red-color" href="#"  data-toggle="modal" data-target="#PasswordModal">
+                                        <img src="assets/images/logout.svg" alt="" />
+
+                                        <span>
+                                            تسجيل خروج
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+
+        <!--password modal-->
+        <div class="modal fade" id="PasswordModal" tabindex="-1" role="dialog" aria-labelledby="PasswordModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="PasswordModalLabel">
+                            إعادة تعيين كلمة المرور
+                        </h5>
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                                &times;
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <h4 class="data-contain">  
+                            هذه الخدمة تتيح لك إعادة تعيين كلمة المرور الخاصة بك، لذا يرجى منك تغير كلمة المرور .
+                        </h4>
+
+                        <form class="form-content">
+                            <div class="form-group">
+                                <label class="label-content">
+                                    كلمة المرور الجديدة 
+                                </label>
+
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="NewPassId"
+                                    placeholder="كلمة المرور الجديدة" />
+
+                                <span class="password" onclick="NewpassFun()" >
+                                    <i class="fas fa-eye"></i>
+                                </span> 
+                            </div>
+
+                            <div class="form-group">
+                                <label class="label-content">
+                                    إعادة كلمة المرور
+                                </label>
+
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="NewpassAgainId"
+                                    placeholder="إعادة كلمة المرور" />
+
+                                <span class="password" onclick="NewpassAgainFun()" >
+                                    <i class="fas fa-eye"></i>
+                                </span> 
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer button-contain">
+                        <button type="button" class="close-btn" data-dismiss="modal">
+                            الغاء
+                        </button>
+
+                        <button type="button" class="custom-btn primary">
+                            <span>  
+                                حفظ
+                            </span>
+
+                            <img
+                                src="assets/images/save.svg"
+                                class="top-icon white-icon"
+                                alt="" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="sub-header">
+                <div class="container">
+                    <div class="content">
+                        <h4>
+                            طلب رقم #63737
+                        </h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="request">
+                <div class="container">
+                    <div class="requsest-data">
+                        <h4 class="request-head">
+                            بيانات المتقدم عن المنشأه
+                        </h4>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        الحالة
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <div class="done">
+                                        تم الاستلام
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        أسم المتقدم
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        احمد يوسف علي
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        رقم الهوية
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        377338
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        رقم الجوال 
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        00966333 
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        الايميل
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        hr@Tamra.com
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="request-head">
+                            بيانات المنشأه
+                        </h4>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        كيان المنشأه 
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        شركة 
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        أسم المنشأه
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        الحارب 
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        رقم السجل التجاري 
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        00966333 
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        عمر المنشأه
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        10 سنوات 
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="line-of-data">
+                            <div class="row">
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="head">
+                                        عدد المواظفين
+                                    </h4>
+                                </div>
+    
+                                <div class="col-lg-2 col-6">
+                                    <h4 class="data">
+                                        30 موظف 
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="request-head">
+                            المرفقات
+                        </h4>
+
+                        <form class="form-content dashed-contain">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="form-group file-input-group">
+                                        <div class="file__input" id="file__input_worker">
+                                            <input type="file" id="worker_photo" class="form-control file__input--file_worker" accept="image/" />
+                                            <label for="worker_photo" class="file__input--label form-label-shape">
+                                                شهادة العمل الرسمية. PNG
+                                            </label>
+                                        </div>
+                                    </div>  
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="form-group file-input-group">
+                                        <div class="file__input" id="file__input">
+                                            <input type="file" id="customFile" class="form-control file__input--file_store" accept="image/" />
+                                            
+                                            <label for="customFile" class="file__input--label form-label-shape">
+                                                السجل التجاري. PDF
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="form-group file-input-group">
+                                        <div class="file__input" id="file__input_drive_card">
+                                            <input type="file" id="drive_card" class="form-control file__input--file_drive_card" accept="image/" />
+                                            
+                                            <label for="drive_card" class="file__input--label form-label-shape">
+                                                شهادة التأمينات. PDF
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <div class="file__input" id="file__input_annoncement">
+                                            <input type="file" id="annoncement" class="form-control file__input--file_annoncement" accept="image/" />
+                                            
+                                            <label for="annoncement" class="file__input--label form-label-shape">
+                                                تفويض رسمي. PNG
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="form-group  file-input-group">
+                                        <div class="file__input" id="file__input_driver">
+                                            <input type="file" id="driver_photo" class="form-control file__input--file_driver" accept="image/" />
+                                            <label for="driver_photo" class="file__input--label form-label-shape">
+                                                صورة هوية المتقدم. PDF
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="copyrights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mb-3">
+                        <div class="image-content">
+                            <img src="assets/images/copyright_1.png" alt="">
+                            <img src="assets/images/copyright_2.png" alt="">
+                            <img src="assets/images/copyright_3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                        <p class="copyright">
+                            © 2021 جَائِـــزَةٍ تَمْـــرَا جميع الحقوق محفوظة
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-12 mb-3">
+                        <ul class="social-media">
+                            <li>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a data-scroll href="#" class="scroll-top-btn" id="scroll-btn">
+            <img src="assets/images/up-arrow.png" alt="">
+        </a>
+
+        <script src="assets/js/lib/jquery4.js"></script>
+
+        <script src="assets/js/lib/popper.js"></script>
+        
+        <script src="assets/js/lib/bootstrap.js"></script>
+
+        <script src="assets/js/lib/owl.carousel.min.js"></script>
+
+        <script src="assets/js/lib/wow.min.js"></script>
+        
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            $('.file__input--file_worker').on('change', function(event) {
+                var files = event.target.files;
+                for (var i = 0; i < files.length; i++) {
+                    var file = files[i];
+                    $("<div class='file__value'><div class='file__value--text'>" + file.name + "</div><div class='file__value--remove' data-id='" + file.name + "' ></div></div>").insertAfter('#file__input_worker');
+                }
+            });
+            $('body').on('click', '.file__value', function() {
+                $(this).remove();
+            });
+        </script>
+
+        <script>
+            
+            $(document).ready(function() {
+                $('.file__input--file_store').on('change', function(event) {
+                    var files = event.target.files;
+                    for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        $("<div class='file__value'><div class='file__value--text'>" + file.name + "</div><div class='file__value--remove' data-id='" + file.name + "' ></div></div>").insertAfter('#file__input');
+                    }
+                });
+                $('body').on('click', '.file__value', function() {
+                    $(this).remove();
+                });
+            });
+
+        </script>
+
+        <script>
+            
+            $(document).ready(function() {
+                $('.file__input--file_driver').on('change', function(event) {
+                    var files = event.target.files;
+                    for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        $("<div class='file__value'><div class='file__value--text'>" + file.name + "</div><div class='file__value--remove' data-id='" + file.name + "' ></div></div>").insertAfter('#file__input_driver');
+                    }
+                });
+                $('body').on('click', '.file__value', function() {
+                    $(this).remove();
+                });
+            });
+
+        </script>
+
+        <script>
+            
+            $(document).ready(function() {
+                $('.file__input--file_drive_card').on('change', function(event) {
+                    var files = event.target.files;
+                    for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        $("<div class='file__value'><div class='file__value--text'>" + file.name + "</div><div class='file__value--remove' data-id='" + file.name + "' ></div></div>").insertAfter('#file__input_drive_card');
+                    }
+                });
+                $('body').on('click', '.file__value', function() {
+                    $(this).remove();
+                });
+            });
+
+        </script>
+
+        <script>
+            
+            $(document).ready(function() {
+                $('.file__input--file_annoncement').on('change', function(event) {
+                    var files = event.target.files;
+                    for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        $("<div class='file__value'><div class='file__value--text'>" + file.name + "</div><div class='file__value--remove' data-id='" + file.name + "' ></div></div>").insertAfter('#file__input_annoncement');
+                    }
+                });
+                $('body').on('click', '.file__value', function() {
+                    $(this).remove();
+                });
+            });
+
+        </script>
+    </body>
+</html>
